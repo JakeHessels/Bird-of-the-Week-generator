@@ -1,6 +1,7 @@
 library(tidyverse)
 
-birds <- read.csv("C:/Users/jake/Downloads/Clements-v2024-October-2024-rev.csv")
+#Change file path
+birds <- read.csv("/bird_list.csv")
 #showing all unique categoires in category
 unique(birds$category)
 
