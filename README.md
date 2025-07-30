@@ -1,5 +1,7 @@
 R code by Jake Hessels for the use of RCNJ Birding Club Bird of The Week post.
 
+The text file contains the bird of the week and the information.
+
 converted to python using ai for faster running using github actions. I prefer R but python is better use case.
 
 Data from Clements 2024 checklist for birds of the world and used to make this random list of bird species possible.
