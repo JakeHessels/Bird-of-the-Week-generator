@@ -31,12 +31,12 @@ status_text = ("Extant"
               else f"Extinct ({weekly_bird['extinct.year']})")
 
 bird_sentence = (
-    f"This week's bird of the week is the {weekly_bird['common.name']} "
-    f"({weekly_bird['scientific.name']}), a "
-    f"{weekly_bird['order'].lower()} from the "
-    f"{weekly_bird['family'].lower()} family. "
-    f"{range_text}. "
-    f"Conservation status: {status_text}."
+    f"This week's bird of the week is the {weekly_bird['English name']}\n"
+    f"({weekly_bird['scientific name']}), a\n"
+    f"{weekly_bird['order'].lower()} from the\n"
+    f"{weekly_bird['family'].lower()} family.\n"
+    f"{range_text}.\n"
+    f"Conservation status: {status_text}.\n"
 )
 
 # Write to file
