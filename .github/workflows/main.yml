@@ -15,7 +15,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('update_bird.py') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('updated_bird.py') }}
 
       - name: Install dependencies
         run: pip install pandas numpy
@@ -23,12 +23,11 @@ jobs:
       - name: Run Python script
         run: python updated_bird.py
 
-- name: Commit update
-  run: |
-    git config --global user.name "GitHub Actions"
-    git config --global user.email "actions@github.com"
-    git add bird_of_the_week.txt
-    git commit -m "Weekly bird update [skip ci]" || echo "No changes"
-    git pull --rebase
-    git push
-
+      - name: Commit update
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add bird_of_the_week.txt
+          git commit -m "Weekly bird update [skip ci]" || echo "No changes"
+          git pull --rebase
+          git push
