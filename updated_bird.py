@@ -31,8 +31,8 @@ status_text = ("Extant"
                else f"Extinct ({current_bird['extinct.year']})")
 # final description for current
 current_bird_sentence = (
-    f" Bird of Week {current_week}, {current_year} \n"
-    f"The bird of the week is the {current_bird['English name']} "
+    f"Bird of Week {current_week}, {current_year} \n"
+    f"This weeks bird of the week is the {current_bird['English name']} "
     f"({current_bird['scientific name']}), a "
     f"{current_bird['order'].lower()} from the "
     f"{current_bird['family'].lower()} family.\n"
@@ -59,8 +59,8 @@ next_status_text = ("Extant"
                     else f"Extinct ({next_bird['extinct.year']})")
 # final description for next weeks bird of the week
 next_bird_sentence = (
-    f" Preview – Bird of Week {next_week}, {next_year} \n"
-    f"The upcoming bird of the week will be the {next_bird['English name']} "
+    f"Preview – Bird of Week {next_week}, {next_year} \n"
+    f"Next weeks bird of the week will be the {next_bird['English name']} "
     f"({next_bird['scientific name']}), a "
     f"{next_bird['order'].lower()} from the "
     f"{next_bird['family'].lower()} family.\n"
